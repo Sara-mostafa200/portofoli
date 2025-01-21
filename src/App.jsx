@@ -2,7 +2,7 @@ import { useLayoutEffect, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, createHashRouter, RouterProvider } from "react-router-dom";
 import About from "./components/About/About";
 import Layout from "./components/Layout/Layout";
 import Projects from "./components/Projects/Projects";
@@ -10,7 +10,7 @@ import Contact from "./components/Contact/Contact";
 import NotFound from "./components/Notfound/NotFound";
 import Home from "./components/Home/Home";
 
-let routing = createBrowserRouter([
+let routing = createHashRouter([
   {
     path: "",
     element: <Layout />,
